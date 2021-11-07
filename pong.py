@@ -129,7 +129,7 @@ class Game:
         # Show left score at the top left corner of the surface
 
         font = pygame.font.SysFont('Times New Roman', 50)
-        text_box = font.render(str(self.l_score), True, pygame.Color('white'), None)
+        text_box = font.render(str(self.r_score), True, pygame.Color('white'), None)
         location = (0, 0)
         self.surface.blit(text_box, location)
 
@@ -137,7 +137,7 @@ class Game:
         # Show right score at the top right corner of the surface.
 
         font = pygame.font.SysFont('Times New Roman', 50)
-        text_box = font.render(str(self.r_score), True, pygame.Color('white'), None)
+        text_box = font.render(str(self.l_score), True, pygame.Color('white'), None)
         text_rect = text_box.get_rect()
         text_rect.right = self.surface.get_width()
         location = text_rect
